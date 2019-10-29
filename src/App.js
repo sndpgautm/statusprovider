@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Layout/Header';
 import Landing from './components/Layout/Landing';
@@ -16,7 +16,7 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div className="App">
           <Header branding="Status Provider" />
           <div className="container">
